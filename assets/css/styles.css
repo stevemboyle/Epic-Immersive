@@ -499,7 +499,7 @@ a:focus,
     background:transparent;
     color:#fff;
     -webkit-transition:color 0.2s ease-out;
-    transition:color 0.2s ease-out; 
+    transition:color 0.2s ease-out;
 }
 
 #main-nav .nav .active > a,
@@ -590,8 +590,12 @@ a:focus,
 #home h1,#home h2,#home h3,#home h4{margin:10px 0;line-height:1.2;}
 
 #home h1{
-    font-size:78px;
+    font-size:53px;
     font-weight: 700;
+}
+
+#home h2 {
+    font-size:20px;
 }
 
 #home p{
@@ -755,16 +759,16 @@ a:focus,
 
 .member-thumb img{
     opacity: .9;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    /*-webkit-filter: grayscale(100%);*/
+    /*filter: grayscale(100%);*/
     -webkit-transition:all .2s ease-out;
     transition:all .2s ease-out;
 }
 
 .team-member:hover .member-thumb img{
     opacity: 1;
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
+    /*-webkit-filter: grayscale(0);*/
+    /*filter: grayscale(0);*/
 }
 
 .member-details h3{
@@ -1049,7 +1053,7 @@ a:focus,
     -o-transition-duration: 0.4s;
     transition-duration: 0.4s;
 
-    transition-timing-function:ease-in-out;    
+    transition-timing-function:ease-in-out;
 }
 
 .masonry {
@@ -1416,7 +1420,7 @@ textarea.form-control {
 
 /*--------------------
 [13. Footer]
-----------------------*/   
+----------------------*/
 
 #main-footer {
     padding:60px 0 20px;
@@ -1533,8 +1537,8 @@ textarea.form-control {
 
 /*--------------------
 [14. Media Queries]
-----------------------*/ 
-   
+----------------------*/
+
 @media (min-width:1499px){
     .container{
         width:1400px;
@@ -1575,7 +1579,7 @@ textarea.form-control {
         padding-left: 5px;
         padding-right: 5px;
     }
-}	
+}
 
 @media (max-width: 767px) {
 
@@ -1724,11 +1728,11 @@ textarea.form-control {
         top:200%;
         text-align: center;
     }
-    
+
     #main-footer .mc-validation p{
         margin: 10px auto;
     }
-    
+
     #filter-works ul li a{
         font-size:14px;
         line-height:21px;
@@ -1776,4 +1780,4 @@ textarea.form-control {
         width: 100%;
     }
 
-}	
+}

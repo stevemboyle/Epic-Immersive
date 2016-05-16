@@ -2,7 +2,7 @@
 
 Color CSS file
 
-Main Color: #6778C1
+Main Color: #DF451A
 
 Include it after main stylesheet:
 
@@ -34,7 +34,7 @@ a:focus,
 .btn.white.transparent:hover,
 .btn.white.transparent:active
 {
-	color:#6778C1;
+	color:#DF451A;
 }
 
 #page-loader span,
@@ -55,12 +55,12 @@ a:focus,
 .btn.transparent:active,
 .btn.white:hover,
 .btn.white:active{
-    background:#6778C1;
+    background:#DF451A;
 }
 
 .features .icon {
-    border-bottom-color:#6778C1;
-    border-right-color:#6778C1;
+    border-bottom-color:#DF451A;
+    border-right-color:#DF451A;
 }
 
 #filter-works ul li.active a,
@@ -68,5 +68,5 @@ a:focus,
 #project-slider .flex-control-paging li a,
 .btn.transparent,
 .btn.transparent:focus{
-    border-color:#6778C1;
+    border-color:#DF451A;
 }

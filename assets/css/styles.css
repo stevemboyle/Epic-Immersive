@@ -75,13 +75,15 @@ a:focus {
 }
 
 a {
-    color:#DF451A;
+    color: white;
+    /*color:#DF451A;*/
     text-decoration: none;
 }
 
 a:hover,
 a:focus {
-    color:#DF451A;
+    /*color:#DF451A;*/
+    color: purple;
     text-decoration: underline;
 }
 
@@ -305,6 +307,12 @@ a:focus,
     background:#f1f2f5;
 }
 
+.hsj-bg{
+  background: url(http://www.hsjvalleyofheartsdelight.org/img03/VOHD_webheader_FINAL.01.jpg);
+  background-size: contain;
+  height: 490px;
+}
+
 .color-bg{
     background:#DF451A;
 }
@@ -329,6 +337,12 @@ a:focus,
 .parallax-bg{
     background-repeat:no-repeat;
     background-size:cover;
+    background-attachment:fixed;
+}
+
+.parallax-bg-contain{
+    background-repeat:no-repeat;
+    background-size:contain;
     background-attachment:fixed;
 }
 
@@ -434,11 +448,14 @@ a:focus,
 #main-nav{
     font-family: 'Fjalla One', sans-serif;
     /*background:rgba(0,0,0,.8);*/
-    background: red;
-    background: none;
+    /*background: #DF451A;*/
+    /*background: white;*/
+    /*background: none;*/
     padding: 20px 0;
     /*color:#4E5961;*/
-    box-shadow:none;
+    /*box-shadow:none;*/
+    /*opacity: .6;*/
+    /*box-shadow: 2px 2px 10px #DF451A;*/
     width:100%;
     -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out;
@@ -446,22 +463,23 @@ a:focus,
 }
 
 #main-nav.is-sticky{
+    /*background: #DF451A;*/
     background: white;
     /*background: #D05D5D;*/
     /*background:rgba(0,0,0,.8);*/
     padding: 0;
-
+    opacity: 1;
     /*box-shadow: 2px 2px 10px #888888;*/
     box-shadow: 2px 2px 10px #DF451A;
 }
 
 #main-nav .navbar-toggle{
-    border:1px solid #fff;
-    border-radius:0;
+    border:3px solid ##DF451A;
+    border-radius:3px;
 }
 
 #main-nav .icon-bar {
-    background:#fff;
+    background:#DF451A;
 }
 
 .navbar-brand,
@@ -495,17 +513,24 @@ a:focus,
     z-index:1;
 }
 
+#main-nav.is-sticky .nav a{
+  /*color: #CB5858;*/
+  color:#DF451A;
+}
+
 #main-nav .nav a,
 #main-nav .nav a:active,
 #main-nav .nav a:hover{
     padding:5px 10px;
-    font-size:14px;
+    font-size:16px;
     line-height:54px;
     font-weight:400;
     text-transform:uppercase;
     background:transparent;
-    /*color:#fff;*/
-    color: #CB5858;
+    /*background: white;*/
+    color:#fff;
+    /*color: #DF451A;*/
+    /*color: #CB5858;*/
     -webkit-transition:color 0.2s ease-out;
     transition:color 0.2s ease-out;
 }
@@ -536,6 +561,44 @@ a:focus,
     z-index: 1;
 }
 
+#minis{
+    display: table;
+    height: 100%;
+    width:100%;
+    padding: 150px 0;
+    margin-bottom:0;
+    position: relative;
+    color:#fff;
+    z-index: 1;
+}
+
+
+#minis .header-content{
+    padding: 125px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#minis .header-content.top{
+    vertical-align: top;
+}
+
+#minis .header-content.bottom{
+    vertical-align: bottom;
+}
+
+
+#minihome{
+    display: table;
+    height: 50%;
+    width:100%;
+    padding: 150px 0;
+    margin-bottom:0;
+    position: relative;
+    color:#fff;
+    z-index: 1;
+}
+
 #home .header-content{
     display: table-cell;
     vertical-align: middle;
@@ -546,6 +609,19 @@ a:focus,
 }
 
 #home .header-content.bottom{
+    vertical-align: bottom;
+}
+
+#minis .header-content{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#minis .header-content.top{
+    vertical-align: top;
+}
+
+#minis .header-content.bottom{
     vertical-align: bottom;
 }
 
@@ -567,6 +643,14 @@ a:focus,
 }
 
 #home .video-container{
+    box-shadow: 0 0 60px rgba(0,0,0,.7);
+}
+
+#minis.overlay-color:before{
+    opacity: .8;
+}
+
+#minis .video-container{
     box-shadow: 0 0 60px rgba(0,0,0,.7);
 }
 
@@ -607,6 +691,21 @@ a:focus,
 }
 
 #home p{
+    margin:0;
+}
+
+#minis h1,#minis h2,#minis h3,#minis h4{margin:10px 0;line-height:1.2;}
+
+#minis h1{
+    font-size:53px;
+    font-weight: 700;
+}
+
+#minis h2 {
+    font-size:20px;
+}
+
+#minis p{
     margin:0;
 }
 
@@ -1361,7 +1460,7 @@ textarea.form-control {
 
 .mc-text-if-empty,
 .mc-text-if-invalid{
-    color: #cc2222;
+    color: white;
 }
 
 #contact{
@@ -1432,7 +1531,7 @@ textarea.form-control {
 
 #main-footer {
     padding:60px 0 20px;
-    background:#000;
+    background:#DF451A;
 }
 
 #main-footer p{
@@ -1487,7 +1586,7 @@ textarea.form-control {
 #main-footer .form-control{
     border-radius: 30px;
     border:none;
-    background: rgba(255,255,255,.1);
+    /*background: rgba(255,255,255,.1);*/
     padding-left: 30px;
     color:#e5e6e7;
     margin-bottom: 0;
@@ -1563,6 +1662,10 @@ textarea.form-control {
         font-size:58px;
     }
 
+    #minis h1{
+        font-size:58px;
+    }
+
     .team-member{
         margin-bottom:60px;
     }
@@ -1611,6 +1714,20 @@ textarea.form-control {
     }
 
     #home h3{
+        font-size:18px;
+        line-height: 1.4;
+    }
+
+    #minis h1{
+        font-size: 42px;
+    }
+
+    #minis h2{
+        font-size:24px;
+        line-height: 1.4;
+    }
+
+    #minis h3{
         font-size:18px;
         line-height: 1.4;
     }
@@ -1748,6 +1865,10 @@ textarea.form-control {
         min-width: 0;
     }
 
+    .white {
+      color: white;
+    }
+
     .project-item .hover-mask {
         padding:25px;
     }
@@ -1787,5 +1908,7 @@ textarea.form-control {
     #projects-container .project-item{
         width: 100%;
     }
+
+    .
 
 }

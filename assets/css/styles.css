@@ -528,8 +528,8 @@ a:focus,
     text-transform:uppercase;
     background:transparent;
     /*background: white;*/
-    color:#fff;
-    /*color: #DF451A;*/
+    /*color:#fff;*/
+    color: #DF451A;
     /*color: #CB5858;*/
     -webkit-transition:color 0.2s ease-out;
     transition:color 0.2s ease-out;

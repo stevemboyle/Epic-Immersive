@@ -1209,6 +1209,81 @@
 		<!-- ==============================================
 		CONTACT
 		=============================================== -->
+		<section id="contact" class="gray-bg padding-top-bottom">
+
+			<div class="container">
+
+				<h2 class="section-title"><span class="primary">Contact</span> Us</h2>
+				<p class="section-description">Are you ready to start your project? Give us a call or drop us a line.</p>
+
+				<div class="row">
+
+					<div class="col-sm-4 col-lg-2 col-lg-offset-1">
+
+						<div class="contact-item">
+
+
+							<h2><span class="icon"><i class="fa fa-phone fa-fw"></i></span> Phone</h2>
+							<p>+01 234-56789<br/>+01 234-56789</p>
+
+						</div>
+
+						<div class="contact-item">
+
+
+							<h2><span class="icon"><i class="fa fa-envelope-o fa-fw"></i></span> Email</h2>
+							<p><a href="mailto:mail@example.com" >mail@example.com</a></p>
+
+						</div>
+
+						<div class="contact-item">
+
+							<h2><span class="icon"><i class="fa fa-map-marker fa-fw"></i></span> Location</h2>
+							<p>250 W Broadway <br/>NY , 10013</p>
+
+						</div>
+
+					</div>
+
+					<!--=== Contact Form ===-->
+
+					<form id="contact-form" class="col-sm-8 col-lg-7 col-lg-offset-1" action="contact.php" method="post" novalidate>
+
+						<div class="form-group">
+						  <label class="control-label" for="contact-name">Name</label>
+						  <div class="controls">
+							<input id="contact-name" name="contactName" placeholder="Your name" class="form-control requiredField" type="text" data-error-empty="Please enter your name">
+						  </div>
+						</div><!-- End name input -->
+
+						<div class="form-group">
+						  <label class="control-label" for="contact-mail">Email</label>
+						  <div class=" controls">
+							<input id="contact-mail" name="email" placeholder="Your email" class="form-control requiredField" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address">
+						  </div>
+						</div><!-- End email input -->
+
+						<div class="form-group">
+						  <label class="control-label" for="contact-message">Message</label>
+							<div class="controls">
+								<textarea id="contact-message" name="comments"  placeholder="Your message" class="form-control requiredField" rows="8" data-error-empty="Please enter your message"></textarea>
+							</div>
+						</div><!-- End textarea -->
+
+						<div class="text-right"><button name="submit" type="submit" class="btn" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button></div>
+						<input type="hidden" name="submitted" id="submitted" value="true" />
+
+					</form><!-- End contact-form -->
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<!-- ==============================================
+		CONTACT
+		=============================================== -->
 		<section id="contact" class="red-bg padding-top-bottom">
 
 			<div class="container">

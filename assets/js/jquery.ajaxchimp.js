@@ -123,7 +123,6 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
                     success: successCallback,
                     dataType: 'jsonp',
                     error: function (resp, text) {
-                        alert( jqXHR.responseText);
                         console.log('mailchimp ajax submit error: ' + text);
                     }
                 });

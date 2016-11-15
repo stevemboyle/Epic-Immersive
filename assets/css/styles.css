@@ -1531,7 +1531,8 @@ textarea.form-control {
 
 #main-footer {
     padding:60px 0 20px;
-    background:#DF451A;
+    /*background:#DF451A;*/
+    background: black;
 }
 
 #main-footer p{
@@ -1588,7 +1589,8 @@ textarea.form-control {
     border:none;
     /*background: rgba(255,255,255,.1);*/
     padding-left: 30px;
-    color:#e5e6e7;
+    /*color:#e5e6e7;*/
+    color: black;
     margin-bottom: 0;
 }
 
